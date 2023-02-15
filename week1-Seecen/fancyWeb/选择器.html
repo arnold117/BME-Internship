@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        id选择器：   #id {}   找具体的某一个盒子
+        标签选择器： div {}   找到所有此类型盒子
+        类选择器： .class    找到某一类盒子
+        子代选择器   >
+        后代选择器   空格
+        */
+       #box a {
+        text-decoration: none;
+        color:black;
+       }
+
+    </style>
+</head>
+<body>
+    <a href="">外面的链接</a>
+    <div id="box">
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <div>
+            <a href="">4</a>
+            <a href="">5</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -17,13 +17,14 @@ html,body{
     background-size: cover;
     /* 图片不重复铺 */
     background-repeat: no-repeat;
+    padding-top: 5%;
+    box-sizing: border-box;
 }
 
 #nav {
     /* border: 1px solid red; */
     width: 1230px;
     margin: auto;
-    list-style-type: none;
     position: relative;
 }
 
@@ -31,22 +32,43 @@ html,body{
     position: absolute;
     right: 0px;
     width: 530px;
+    /* 取消前面的点 */
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
+    /* 子节点平均分配空白 */
+    justify-content: space-between;
     /* background-color: blueviolet; */
 }
 
 #items a {
+    /* 去除下划线 */
     text-decoration: none;
     text-align: center;
-    margin: 10px;
     border-radius: 10px;
     background-color: rgba(38, 104, 170, 0.67);
     display: block;
     width: 80px;
     height: 80px;
+    color: white;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+
+.zh1 {
+    font-size: 36px !important;
+}
+.zh3 {
+    font-size: 32px !important;
+    margin-bottom:5px;
+    position: relative;
+    top:1px;
+}
+.zh2 {
+    font-size: 14px;
+    position: relative;
+    top:1px;
 }
 
 #footer {
@@ -66,12 +88,12 @@ html,body{
 #copyright {
     font-size: 14px;
     letter-spacing: 1px;
+    margin-top: 20px;
     font-family: Arial, "微软雅黑";
 }
 
 #ysjk {
     /* font-family: sunfont; */
-    font-size: 50px;
+    font-size: 42px;
     letter-spacing: 1px;
-    margin-top: 10px;
 }
