@@ -19,6 +19,36 @@ html,body{
     background-repeat: no-repeat;
 }
 
+#nav {
+    /* border: 1px solid red; */
+    width: 1230px;
+    margin: auto;
+    list-style-type: none;
+    position: relative;
+}
+
+#items {
+    position: absolute;
+    right: 0px;
+    width: 530px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* background-color: blueviolet; */
+}
+
+#items a {
+    text-decoration: none;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgba(38, 104, 170, 0.67);
+    display: block;
+    width: 80px;
+    height: 80px;
+}
+
 #footer {
     position: absolute;
     bottom: 0px;
