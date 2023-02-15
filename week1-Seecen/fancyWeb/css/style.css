@@ -10,11 +10,38 @@ html,body{
 #main {
     /* 自动适应屏幕百分百高度 */
     height: 100vh;
-    background-image: url("../images/bg.png");
+    background-image: url("../images/bg.jpg");
     /* 背景图片在容器中的位置: 居中显示*/
     background-position: center;
     /* 背景图片尺寸: 适应屏幕 */
     background-size: cover;
     /* 图片不重复铺 */
     background-repeat: no-repeat;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-image: url("../images/foot_bg.png");
+    background-size: 100% 100%;
+    height: 27vh;
+
+    color: white;
+    text-align: center;
+    padding-top: 76px;
+    box-sizing: border-box;
+}
+
+#copyright {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: Arial, "微软雅黑";
+}
+
+#ysjk {
+    /* font-family: sunfont; */
+    font-size: 50px;
+    letter-spacing: 1px;
+    margin-top: 10px;
 }
