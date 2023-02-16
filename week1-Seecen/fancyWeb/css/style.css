@@ -47,6 +47,7 @@ html,body{
     text-decoration: none;
     text-align: center;
     border-radius: 10px;
+    position: relative;
     background-color: rgba(38, 104, 170, 0.67);
     display: block;
     width: 80px;
@@ -81,6 +82,33 @@ html,body{
     top:1px;
 }
 
+.qrcode {
+    width: 160px;
+    height: 160px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    background-size: 138px 138px;
+    left: -50%;
+    top: 105px;
+    display: none;
+    background-position: center;
+    /* background-size: cover; */
+}
+
+#items a:hover .qrcode {
+    display: block;
+}
+
+#h5mobile {
+    background-image: url("../images/Alipay.png");
+}
+
+#wechatService {
+    background-image: url("../images/Wechat.png");
+}
+
 #footer {
     position: absolute;
     bottom: 0px;
@@ -88,7 +116,6 @@ html,body{
     background-image: url("../images/foot_bg.png");
     background-size: 100% 100%;
     height: 27vh;
-
     color: white;
     text-align: center;
     padding-top: 76px;
