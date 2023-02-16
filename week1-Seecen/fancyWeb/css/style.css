@@ -95,6 +95,7 @@ html,body{
     top: 105px;
     display: none;
     border: 1px solid white;
+    z-index: 999;
 }
 /* qrcode内部最前面添加盒子 */
 .qrcode::before {
@@ -126,11 +127,57 @@ html,body{
 }
 
 #list {
-    border: 1px solid red;
-    width: 1230px;
+    width: 1180px;
     position: absolute;
-    left: calc((100% - 1230px) / 2);
-    top: 200px;
+    left: calc((100% - 1180px) / 2);
+    top: 29%;
+}
+
+#list-items {
+    /* 取消前面的点 */
+    list-style-type: none;
+}
+
+.panel {
+    width: 21.5%;
+    height: 32vh;
+    position: absolute;
+    border-radius: 10px;
+    /* 0.2s 动画过渡 */
+    transition: all 0.2s;
+}
+
+.panel:hover {
+    transform: scale(1.1);
+    /* 提升至顶层 */
+    z-index: 999;
+}
+
+#old {
+    left: 0px;
+    background-color: rgba(215, 174, 103, 0.8);
+}
+
+#test {
+    left: 20%;
+    top: 50px;
+    background-color: rgba(30, 130, 113, 0.8);
+}
+
+#pub {
+    left: 40%;
+    background-color: rgba(23, 89, 142, 0.8);
+}
+
+#emp {
+    left: 60%;
+    top: 50px;
+    background-color: rgba(225, 225, 225, 0.8);
+}
+
+#eng {
+    left: 80%;
+    background-color: rgba(215, 170, 100, 0.8);
 }
 
 #footer {
