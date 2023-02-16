@@ -23,7 +23,8 @@ html,body{
 
 #nav {
     /* border: 1px solid red; */
-    width: 1230px;
+    /* 小于1230时自适应 */
+    max-width: 1230px;
     margin: auto;
     position: relative;
 }
@@ -122,6 +123,14 @@ html,body{
 
 #wechatService {
     background-image: url("../images/Wechat.png");
+}
+
+#list {
+    border: 1px solid red;
+    width: 1230px;
+    position: absolute;
+    left: calc((100% - 1230px) / 2);
+    top: 200px;
 }
 
 #footer {
