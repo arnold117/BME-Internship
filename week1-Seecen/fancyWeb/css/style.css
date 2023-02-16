@@ -54,6 +54,16 @@ html,body{
     color: white;
     padding-top: 15px;
     box-sizing: border-box;
+    /* 添加css变化过渡效果 */
+    /* all 全部过渡；0.2 过渡时间 */
+    transition: all 0.2s;
+}
+
+#items a:hover {
+    background-color: white;
+    color: rgb(51, 99, 160);
+    margin-top: -5px;
+    box-shadow: 0 0px 20px #ccc;
 }
 
 .zh1 {
