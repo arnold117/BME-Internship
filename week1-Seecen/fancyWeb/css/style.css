@@ -93,8 +93,23 @@ html,body{
     left: -50%;
     top: 105px;
     display: none;
-    background-position: center;
-    /* background-size: cover; */
+    border: 1px solid white;
+}
+/* qrcode内部最前面添加盒子 */
+.qrcode::before {
+    content: "";
+    position: absolute;
+    /* 父容器宽度50% - 子容器宽度一半 */
+    left: calc(50% - 10px);
+    width: 20px;
+    height: 20px;
+    top: -11px;
+    /* 顺时针旋转45° */
+    transform: rotate(45deg);
+    background-color: white;
+    /* 只需要上边框与左边框 */
+    border-top: 1px solid white;
+    border-left: 1px solid white;
 }
 
 #items a:hover .qrcode {
