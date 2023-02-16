@@ -145,6 +145,11 @@ html,body{
     border-radius: 10px;
     /* 0.2s 动画过渡 */
     transition: all 0.2s;
+    /* 去除下划线 */
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10vh;
+    box-sizing: border-box;
 }
 
 .panel:hover {
@@ -178,6 +183,16 @@ html,body{
 #eng {
     left: 80%;
     background-color: rgba(215, 170, 100, 0.8);
+}
+
+.zt5 {
+    font-size: 30px;
+    color: white;
+}
+
+.zt6 {
+    font-size: 30px;
+    color: black;
 }
 
 #footer {
