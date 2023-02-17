@@ -26,6 +26,13 @@ ol, ul {
     text-decoration: none;
 }
 
+input, button, textarea, select, optgroup, option {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+}
+
 #wapper {
     width: 100%;
     height: 135px;
@@ -109,4 +116,26 @@ ol, ul {
     float: left;
     margin-top: 15px;
     background: url("../images/logo.png") no-repeat;
+}
+
+
+#searchInput {
+    width: 325px;
+    height: 32px;
+    background: url("../images/search_box.png") no-repeat;
+    padding: 8px 0 0 3px;
+    position: absolute;
+    top: 50px;
+    left: 675px;
+    overflow: hidden;
+}
+
+#searchTip {
+    border: medium none;
+    outline: 0 none;
+    margin: 0px 0 0 6px;
+    padding: 0;
+    height: 16px;
+    width: 270px;
+    line-height: 16px;
 }
