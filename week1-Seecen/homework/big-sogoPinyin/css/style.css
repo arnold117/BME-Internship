@@ -118,24 +118,210 @@ input, button, textarea, select, optgroup, option {
     background: url("../images/logo.png") no-repeat;
 }
 
-
 #searchInput {
     width: 325px;
     height: 32px;
     background: url("../images/search_box.png") no-repeat;
-    padding: 8px 0 0 3px;
+    border: medium none;
+    outline: 0 none;
+    margin: 0px 0 0 6px;
+    padding-left: 10px;
     position: absolute;
     top: 50px;
     left: 675px;
     overflow: hidden;
+    line-height: 16px;
 }
 
-#searchTip {
-    border: medium none;
-    outline: 0 none;
-    margin: 0px 0 0 6px;
+#searchInput:focus {
+    background: url("../images/search_box_focus.png") no-repeat;
+}
+
+#navList {
+    width: 1000px;
+    height: 35px;
+    float: left;
+    margin-top: 15px;
+}
+
+#navList ul li {
+    height: 35px;
+    float: left;
+    margin-right: 30px;
+}
+
+#navList ul li a{
+    height: 35px;
+    float: left;
+}
+
+#navList ul li a:hover {
+    background-color: #e94f0d;
+}
+
+#navList ul li a.current {
+    background-color: #e94f0d;
+}
+
+.navName {
+    float: left;
+    margin: 5px 21px 0;
+    color: white;
+    font-size: 18px;
+    font-family: "Microsoft Yahei","微软雅黑",Tahoma,Arial,Helvetica,STHeiti;
+    cursor: pointer;
+}
+
+#zmeit {
+    position: relative;
+}
+
+#zmeitNew {
+    position: absolute;
+    background: url("../images/new.png") no-repeat 0px 0px;
+    width: 26px;
+    height: 14px;
+    top: -16px;
+    left: 143px;
+}
+
+/* Start wapperMain */
+
+#wapperMain {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+
+.bannerSides {
+    width: 100%;
+    height: 400px;
+}
+
+.bannerSide {
+    z-index: 9;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 400px;
+    left: 0px;
+}
+
+#bannerSides0 {
+    background: #F9533f url("../images/bg.png") no-repeat center center;
+    display: block;
+}
+
+.bannerSwap {
+    z-index: 8;
+    margin: 0 auto;
+    width: 1000px;
+    height: 374px;
+    position: relative;
+}
+
+#banner0 #downloadBtn {
+    position: absolute;
+    right: 120px;
+    bottom: 35px;
+    display: inline-block;
+    width: 245px;
+    height: 56px;
+    cursor: pointer;
+    background: url("../images/download.png") 0 0 no-repeat;
+    z-index: 2;
+    text-indent: -9999px;
+    margin: 0;
     padding: 0;
-    height: 16px;
-    width: 270px;
-    line-height: 16px;
+    border: 0;
+    outline: none;
+}
+
+#banner0 #downloadBtn:hover {
+    background: url("../images/download_hover.png") 0 0 no-repeat;
+}
+
+#bannerHover {
+    position: absolute;
+    right: 120px;
+    bottom: 35px;
+    display: inline-block;
+    width: 245px;
+    height: 56px;
+    background: url(http://imedl.sogoucdn.com/index/download_hover.png) 0 0 no-repeat;
+    z-index: 1;
+}
+
+#banner0 #upDate {
+    position: absolute;
+    right: 195px;
+    bottom: 125px;
+    width: 164px;
+    text-align: left;
+    line-height: 18px;
+    opacity: 0.8;
+    color: 27364D;
+    font-size: 15px;
+    font-family: '微软雅黑','Arial';
+}
+
+#banner0 #textVersion {
+    position: absolute;
+    right: 0;
+    opacity: 0.5;
+    bottom: 286px;
+    text-align: right;
+    line-height: 20px;
+    color: 27364D;
+    font-size: 16px;
+    font-family: '微软雅黑','Arial';
+}
+
+#banner0 #verSpec {
+    position: absolute;
+    right: 130px;
+    bottom: 125px;
+    text-align: right;
+    line-height: 20px;
+    color: rgb(61,129,186);
+    font-size: 12px;
+    font-family: '微软雅黑','Arial';
+}
+
+#banner0 #verSupp {
+    position: absolute;
+    left: 641px;
+    bottom: 98px;
+    text-align: right;
+    line-height: 20px;
+    opacity: 0.8;
+    color: 27364D;
+    font-size: 15px;
+    font-family: '微软雅黑','Arial';
+}
+
+#banner0 #mobDownload {
+    position: absolute;
+    right: 1px;
+    bottom: 35px;
+    display: inline-block;
+    width: 93px;
+    height: 22px;
+    background: url("../images/mobile_download.png") 0 0 no-repeat;
+    z-index: 2;
+}
+
+#banner0 #mobDownload:hover {
+    background: url("../images/mobile_download_hover.png") 0 0 no-repeat;
+}
+
+#banner0 #qrcode {
+    position: absolute;
+    right: 2px;
+    bottom: 60px;
+    display: inline-block;
+    width: 89px;
+    height: 89px;
+    background: url("../images/ewm.jpg") no-repeat scroll 50% 50%;
 }
