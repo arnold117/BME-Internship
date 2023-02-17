@@ -261,7 +261,7 @@ input, button, textarea, select, optgroup, option {
     text-align: left;
     line-height: 18px;
     opacity: 0.8;
-    color: 27364D;
+    color: #27364D;
     font-size: 15px;
     font-family: '微软雅黑','Arial';
 }
@@ -273,19 +273,21 @@ input, button, textarea, select, optgroup, option {
     bottom: 286px;
     text-align: right;
     line-height: 20px;
-    color: 27364D;
+    color: #27364D;
     font-size: 16px;
     font-family: '微软雅黑','Arial';
 }
 
-#banner0 #verSpec {
+#banner0 #verSpec a {
     position: absolute;
     right: 130px;
     bottom: 125px;
     text-align: right;
     line-height: 20px;
-    color: rgb(61,129,186);
-    font-size: 12px;
+    /* color: #27364D; */
+    color:rgb(61,129,186);
+    text-decoration: underline;
+    font-size: 16px;
     font-family: '微软雅黑','Arial';
 }
 
@@ -296,7 +298,7 @@ input, button, textarea, select, optgroup, option {
     text-align: right;
     line-height: 20px;
     opacity: 0.8;
-    color: 27364D;
+    color: #27364D;
     font-size: 15px;
     font-family: '微软雅黑','Arial';
 }
