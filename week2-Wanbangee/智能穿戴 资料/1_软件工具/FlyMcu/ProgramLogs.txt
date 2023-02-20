@@ -1,0 +1,4 @@
+[2023-02-20 14:47:Program Success:55FF70067572545623511467 C:\Users\Arnold\Documents\UNDERGRADUATE\BME-Internship\week2-Wanbangee\SmartWear\MDK-ARM\SmartWear\SmartWear.hex
+[2023-02-20 14:48:Program Success:55FF6C067572545617421767 C:\Users\Arnold\Documents\UNDERGRADUATE\BME-Internship\week2-Wanbangee\SmartWear\MDK-ARM\SmartWear\SmartWear.hex
+[2023-02-20 14:49:Program Success:55FF6C067572545617421767 C:\Users\Arnold\Documents\UNDERGRADUATE\BME-Internship\week2-Wanbangee\SmartWear\MDK-ARM\SmartWear\SmartWear.hex
+[2023-02-20 14:51:Program Success:55FF6C067572545617421767 C:\Users\Arnold\Documents\UNDERGRADUATE\BME-Internship\week2-Wanbangee\SmartWear\MDK-ARM\SmartWear\SmartWear.hex

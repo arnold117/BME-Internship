@@ -95,15 +95,27 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+    #if 1
     // 驱动PB5输出低电平 LED1亮
-    HAL_GPIO_WritePin(GPIOC, GPIO_PIN_5, GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_RESET);
 
     // 延时 让上一个动作停留一段时间 1000ms
     HAL_Delay(1000);
 
     // 驱动PB5输出高电平 LED1灭
-    HAL_GPIO_WritePin(GPIOC, GPIO_PIN_5, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_SET);
     HAL_Delay(1000);
+    #else
+    // 另一方法：
+    HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_5);
+    HAL_Delay(1000);
+    #endif
+    /*
+    #if bbb 如满足条件，执行if下面的代码
+    #else 不满足，执行else下面的代码
+    #endif
+    该注释会被编译进代码内
+    */
   }
   /* USER CODE END 3 */
 }
